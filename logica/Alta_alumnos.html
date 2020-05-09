@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Manara</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <LINK REL=StyleSheet HREF="home.css" TITLE="Estilos">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header> 
+        <div id="top-header"> 
+               
+            <!-- Logo -->
+            <div id="logo"> 
+                <img src="../Img/logo manara.jpg" alt="logo" class="logo"/> 
+                <nav> 
+                    <ul> 
+                        <li class="active"><a href="home.html">Home</a></li> 
+                        <li><a href="#">Alta de maestros</a></li> 
+                        <li><a href="#">Alta de alumnos</a></li>  
+                        <li><a href="#">Cursos</a></li> 
+                        <li class="active"><a href="Consultar_alumnos.html">Consultar alumnos</a></li>
+                    </ul> 
+                </nav>
+            </div>
+             
+        </div>
+
+    </header>
+
+<form method="POST" action="alta_alumnos.php">
+    <div class="imgcontainer">
+        <img src="../Img/logo manara.jpg" alt="formulario" class="formulario">
+    </div>
+    <div class="container">
+        <label for="aname"><b>Nombre del alumno</b></label>
+        <input type="text" placeholder="Ingresa en el nombre del alumno" name="aname" required>
+
+        <label for="apellido"><b>Apellido</b></label>
+        <input type="text" placeholder="Ingrese el apellido del alumno" name="apellido" required>
+
+        <label for="edad"><b>Edad</b></label>
+        <input type="number" placeholder="Ingrese la edad del alumno" name="edad" required>
+
+        <label for="fecha"><b>Fecha de inscripcion</b></label>
+        <input type="date" placeholder="Ingrese el apellido del alumno" name="fecha" required>
+
+        <label for="npadre"><b>Nombre del padre</b></label>
+        <input type="text" placeholder="Ingrese el apellido del padre" name="npadre" required>
+
+        <label for="nmadre"><b>Nombre del padre</b></label>
+        <input type="text" placeholder="Ingrese el apellido de la madre" name="nmadre" required>
+
+        <label for="telefono"><b>Telefono</b></label>
+        <input type="number" placeholder="Ingrese numero telefonico" name="telefono" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Ingrese su correo" name="email" required>
+
+
+        <button type="submit">Crear alumno</button>
+    </div>
+
+</form>
+
+</body>
+
+</html>
